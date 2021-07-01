@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_main"
+            android:title="시작 화면" />
+        <item
+            android:id="@+id/nav_touch"
+            android:title="터치 연습하기" />
+        <item
+            android:id="@+id/nav_scroll"
+            android:title="스크롤 연습하기" />
+        <item
+            android:id="@+id/nav_keypad3"
+            android:title="글자 이외 키패드 연습하기" />
+        <item
+            android:id="@+id/nav_keypad"
+            android:title="자음 입력 연습하기" />
+        <item
+            android:id="@+id/nav_keypad2"
+            android:title="모음 입력 연습하기" />
+        <item
+            android:id="@+id/nav_typing_one"
+            android:title="한 글자 입력 연습하기" />
+        <item
+            android:id="@+id/nav_typing_s"
+            android:title="단어 입력 연습하기" />
+        <item
+            android:id="@+id/nav_typing_l"
+            android:title="문장 입력 연습하기" />
+
+    </group>
+</menu>

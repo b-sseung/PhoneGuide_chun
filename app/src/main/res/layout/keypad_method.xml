@@ -1,0 +1,377 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:gravity="center"
+            android:text="키패드의 빨간 네모 안에는"
+            android:textColor="#000000"
+            android:textSize="27dp"
+            android:textStyle="bold" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/linearlayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="5dp"
+                    android:text="ㄱ ~ ㅎ의 자음 버튼입니다."
+                    android:textColor="#000000"
+                    android:textSize="27dp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_marginTop="15dp"
+                    android:text="'ㄱ ㅋ'이 적힌 자판으로"
+                    android:textColor="#646464"
+                    android:textSize="23dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center"
+                    android:text="예시를 보여주겠습니다."
+                    android:textColor="#646464"
+                    android:textSize="23dp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp">
+
+                <LinearLayout
+                    android:id="@+id/imagelayout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:visibility="invisible"
+                    android:orientation="vertical"
+                    android:layout_gravity="center">
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:layout_marginBottom="10dp">
+                        <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="입력 내용 : "
+                        android:textSize="20dp"/>
+                        <EditText
+                            android:id="@+id/editText"
+                            android:layout_width="80dp"
+                            android:layout_height="wrap_content"
+                            android:textSize="25dp"
+                            android:text=""
+                            android:textStyle="bold"
+                            android:gravity="center"/>
+
+                        <Button
+                            android:id="@+id/replayButton"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="다시보기"
+                            android:textSize="20dp"/>
+                    </LinearLayout>
+
+                    <FrameLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center">
+                        <ImageView
+                            android:id="@+id/image1"
+                            android:layout_width="130dp"
+                            android:layout_height="86dp"
+                            android:layout_gravity="center"
+                            android:adjustViewBounds="true"
+                            android:background="@drawable/keypad_jaum_sebu1" />
+                        <ImageView
+                            android:id="@+id/circle_right"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginLeft="20dp"
+                            android:background="@drawable/redcircle"
+                            android:visibility="invisible"/>
+
+                        <ImageView
+                            android:id="@+id/circle_left"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginRight="20dp"
+                            android:background="@drawable/redcircle"
+                            android:visibility="invisible" />
+                    </FrameLayout>
+                    <TextView
+                        android:id="@+id/circle_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="자판 자체에는 적힌게 없어요"
+                        android:background="#88000000"
+                        android:textSize="20dp"
+                        android:textStyle="bold"
+                        android:textColor="#FFFFFF"
+                        android:visibility="invisible" />
+                </LinearLayout>
+            </FrameLayout>
+        </FrameLayout>
+
+
+
+
+    </LinearLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toTopOf="@+id/frameLayout">
+
+            <Button
+                android:id="@+id/backButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginRight="10dp"
+                android:paddingLeft="20dp"
+                android:paddingTop="10dp"
+                android:paddingRight="20dp"
+                android:paddingBottom="10dp"
+                android:text="이전"
+                android:textSize="25dp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/nextButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:paddingLeft="20dp"
+                android:paddingTop="10dp"
+                android:paddingRight="20dp"
+                android:paddingBottom="10dp"
+                android:text="다음"
+                android:textSize="25dp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/frameLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:scaleType="centerInside"
+                android:src="@drawable/keypad_jaum"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <TextView
+                android:id="@+id/touch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="터치"
+                android:textColor="#FF0000"
+                android:textSize="35dp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.060"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.45"
+                android:visibility="invisible"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <LinearLayout
+        android:id="@+id/exLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#88000000"
+        android:gravity="center_horizontal"
+        android:visibility="invisible"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="38dp"
+            android:layout_marginTop="30dp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginBottom="7dp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:layout_marginRight="50dp"
+                    android:layout_marginBottom="7dp"
+                    android:background="@drawable/arrow_1" />
+            </LinearLayout>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="이 버튼을 누르면"
+                android:textColor="#FFFFFF"
+                android:textSize="23dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="키패드의 터치 글자가 움직이면서"
+                android:textColor="#FFFFFF"
+                android:textSize="23dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="입력 내용이 변하는 것을"
+                android:textColor="#FFFFFF"
+                android:textSize="23dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="다시 볼 수 있어요."
+                android:textColor="#FFFFFF"
+                android:textSize="23dp"
+                android:textStyle="bold" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="38dp"
+            android:layout_marginRight="38dp"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/arrow_2"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"/>
+        </LinearLayout>
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:scaleType="centerInside"
+                android:src="@drawable/keypad_size2"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="터치"
+                android:textColor="#FF0000"
+                android:textSize="35dp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.060"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.07"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </LinearLayout>
+
+</FrameLayout>
+

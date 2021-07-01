@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:openDrawer="start">
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/AppTheme.AppBarOverlay">
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="?attr/colorPrimary"
+                app:popupTheme="@style/AppTheme.PopupOverlay" />
+        </com.google.android.material.appbar.AppBarLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_gravity="center"
+                android:padding="15dp"
+                android:background="@drawable/stroke"
+                android:layout_marginTop="50dp">
+
+                <TextView
+                    android:id="@+id/text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="입력해야할 문장 : "
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/question"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:textColor="#000000"
+                    android:bufferType="spannable"
+                    android:textSize="30dp"
+                    android:textStyle="bold"
+                    android:padding="10dp"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center_horizontal"
+                    android:background="@drawable/stroke"/>
+
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/editText"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:layout_gravity="center"
+                android:textSize="25dp"
+                android:hint="여기에 입력해주세요."
+                android:imeOptions="actionDone"
+                android:inputType="text"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_marginTop="50dp">
+
+                <Button
+                    android:id="@+id/button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="확인"
+                    android:textStyle="bold"
+                    android:padding="10dp"
+                    android:textSize="25dp"/>
+
+                <Button
+                    android:id="@+id/button2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="시작 화면으로 돌아가기"
+                    android:textStyle="bold"
+                    android:padding="10dp"
+                    android:layout_marginTop="15dp"
+                    android:textSize="25dp"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior">
+            <FrameLayout
+                android:id="@+id/touchLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="invisible"
+                android:background="#88000000">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="40dp"
+                    android:layout_gravity="center_horizontal"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="350dp"
+                        android:layout_height="145dp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/square"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="350dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/arrow_3_2"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="5dp"
+                        android:text="여기에 적힌 문장을"
+                        android:textColor="#FFFFFF"
+                        android:textSize="30dp"
+                        android:textStyle="bold"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="5dp"
+                        android:text="입력창에 입력해주세요."
+                        android:textColor="#FFFFFF"
+                        android:textSize="30dp"
+                        android:textStyle="bold"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="215dp"/>
+
+                    <TextView
+                        android:layout_width="280dp"
+                        android:layout_height="75dp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/square"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/arrow_3_2"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:layout_gravity="center_horizontal"
+                        android:text="입력창입니다."
+                        android:textColor="#FFFFFF"
+                        android:textSize="30dp"
+                        android:textStyle="bold"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:text="키패드가 안보이면"
+                        android:textColor="#FFFFFF"
+                        android:textSize="25dp"
+                        android:textStyle="bold"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:text="여기를 눌러주세요."
+                        android:textColor="#FFFFFF"
+                        android:textSize="25dp"
+                        android:textStyle="bold"/>
+                </LinearLayout>
+
+            </FrameLayout>
+
+            <LinearLayout
+                android:id="@+id/touchLayout2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:visibility="invisible"
+                android:background="#88000000">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="390dp"
+                    android:orientation="vertical"
+                    android:gravity="center|bottom">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="입력을 완료하였다면"
+                        android:textColor="#FFFFFF"
+                        android:textSize="25dp"
+                        android:textStyle="bold"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="빈 곳(흰 부분)을 눌러"
+                        android:textColor="#FFFFFF"
+                        android:textSize="25dp"
+                        android:textStyle="bold"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="키패드를 없앤 후"
+                        android:textColor="#FFFFFF"
+                        android:textSize="25dp"
+                        android:textStyle="bold"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="확인 버튼을 누르면"
+                        android:textColor="#FFFFFF"
+                        android:textSize="25dp"
+                        android:textStyle="bold"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="다음 문제로 넘어갈 수 있습니다."
+                        android:textColor="#FFFFFF"
+                        android:textSize="25dp"
+                        android:textStyle="bold"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="7dp"
+                        android:background="@drawable/arrow_3"/>
+                    <TextView
+                        android:layout_width="100dp"
+                        android:layout_height="60dp"
+                        android:layout_marginTop="7dp"
+                        android:background="@drawable/square"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:gravity="center_horizontal">
+                    <TextView
+                        android:layout_width="350dp"
+                        android:layout_height="60dp"
+                        android:layout_marginTop="7dp"
+                        android:background="@drawable/square"/>
+                    <TextView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="7dp"
+                        android:background="@drawable/arrow_3_2"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="시작 화면으로 돌아가고 싶다면"
+                        android:layout_marginTop="7dp"
+                        android:textColor="#FFFFFF"
+                        android:textSize="25dp"
+                        android:textStyle="bold"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="이 버튼을 눌러주세요."
+                        android:textColor="#FFFFFF"
+                        android:textSize="25dp"
+                        android:textStyle="bold"/>
+                </LinearLayout>
+            </LinearLayout>
+        </FrameLayout>
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+</androidx.drawerlayout.widget.DrawerLayout>

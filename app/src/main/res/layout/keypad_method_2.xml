@@ -1,0 +1,554 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:gravity="center"
+            android:text="키패드에서 직접 세번씩 눌러보세요."
+            android:textColor="#000000"
+            android:textSize="25dp"
+            android:textStyle="bold" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:id="@+id/layout1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:paddingLeft="20dp">
+
+                    <ImageView
+                        android:layout_width="80dp"
+                        android:layout_height="53dp"
+                        android:background="@drawable/keypad_jaum_sebu1" />
+
+                    <ImageView
+                        android:id="@+id/arrow1"
+                        android:layout_width="40dp"
+                        android:layout_height="26dp"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="50dp"
+                        android:layout_marginRight="50dp"
+                        android:background="@drawable/arrow"
+                        android:visibility="invisible" />
+
+                    <TextView
+                        android:id="@+id/text1"
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:text=""
+                        android:textSize="30dp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#BDBDBD"
+                    android:layout_margin="8dp"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:paddingLeft="20dp">
+
+                    <ImageView
+                        android:layout_width="80dp"
+                        android:layout_height="53dp"
+                        android:background="@drawable/keypad_jaum_sebu2" />
+
+                    <ImageView
+                        android:id="@+id/arrow2"
+                        android:layout_width="40dp"
+                        android:layout_height="26dp"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="50dp"
+                        android:layout_marginRight="50dp"
+                        android:background="@drawable/arrow"
+                        android:visibility="invisible" />
+
+                    <TextView
+                        android:id="@+id/text2"
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:text=""
+                        android:textSize="30dp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#BDBDBD"
+                    android:layout_margin="8dp"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:paddingLeft="20dp">
+
+                    <ImageView
+                        android:layout_width="80dp"
+                        android:layout_height="53dp"
+                        android:background="@drawable/keypad_jaum_sebu3" />
+
+                    <ImageView
+                        android:id="@+id/arrow3"
+                        android:layout_width="40dp"
+                        android:layout_height="26dp"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="50dp"
+                        android:layout_marginRight="50dp"
+                        android:background="@drawable/arrow"
+                        android:visibility="invisible" />
+
+                    <TextView
+                        android:id="@+id/text3"
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:text=""
+                        android:textSize="30dp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layout2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="invisible">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:paddingLeft="20dp">
+
+                    <ImageView
+                        android:layout_width="80dp"
+                        android:layout_height="53dp"
+                        android:background="@drawable/keypad_jaum_sebu4" />
+
+                    <ImageView
+                        android:id="@+id/arrow4"
+                        android:layout_width="40dp"
+                        android:layout_height="26dp"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="50dp"
+                        android:layout_marginRight="50dp"
+                        android:background="@drawable/arrow"
+                        android:visibility="invisible" />
+
+                    <TextView
+                        android:id="@+id/text4"
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:text=""
+                        android:textSize="30dp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#BDBDBD"
+                    android:layout_margin="8dp"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:paddingLeft="20dp">
+
+                    <ImageView
+                        android:layout_width="80dp"
+                        android:layout_height="53dp"
+                        android:background="@drawable/keypad_jaum_sebu5" />
+
+                    <ImageView
+                        android:id="@+id/arrow5"
+                        android:layout_width="40dp"
+                        android:layout_height="26dp"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="50dp"
+                        android:layout_marginRight="50dp"
+                        android:background="@drawable/arrow"
+                        android:visibility="invisible" />
+
+                    <TextView
+                        android:id="@+id/text5"
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:text=""
+                        android:textSize="30dp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </LinearLayout>
+        </FrameLayout>
+    </LinearLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="bottom">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toTopOf="@+id/imageView2">
+
+            <Button
+                android:id="@+id/backButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginRight="10dp"
+                android:paddingLeft="20dp"
+                android:paddingTop="10dp"
+                android:paddingRight="20dp"
+                android:paddingBottom="10dp"
+                android:text="이전"
+                android:textSize="25dp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/nextButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:paddingLeft="20dp"
+                android:paddingTop="10dp"
+                android:paddingRight="20dp"
+                android:paddingBottom="10dp"
+                android:text="다음"
+                android:textSize="25dp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:scaleType="centerInside"
+            android:src="@drawable/keypad"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/touch1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="터치"
+            android:textColor="#88FF0000"
+            android:textSize="35dp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.060"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/imageView2"
+            app:layout_constraintVertical_bias="0.460"
+            android:visibility="invisible"/>
+
+        <TextView
+            android:id="@+id/touch_text1"
+            android:layout_width="70dp"
+            android:layout_height="53dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.060"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/imageView2"
+            app:layout_constraintVertical_bias="0.460"/>
+
+        <TextView
+            android:id="@+id/touch2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="터치"
+            android:textColor="#88FF0000"
+            android:textSize="35dp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.650"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/imageView2"
+            app:layout_constraintVertical_bias="0.460"
+            android:visibility="invisible"/>
+        <TextView
+            android:id="@+id/touch_text2"
+            android:layout_width="70dp"
+            android:layout_height="53dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.650"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/imageView2"
+            app:layout_constraintVertical_bias="0.460"/>
+
+        <TextView
+            android:id="@+id/touch3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="터치"
+            android:textColor="#88FF0000"
+            android:textSize="35dp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.060"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/imageView2"
+            app:layout_constraintVertical_bias="0.715"
+            android:visibility="invisible"/>
+
+        <TextView
+            android:id="@+id/touch_text3"
+            android:layout_width="70dp"
+            android:layout_height="53dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.060"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/imageView2"
+            app:layout_constraintVertical_bias="0.715"/>
+
+        <TextView
+            android:id="@+id/touch4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="터치"
+            android:textColor="#88FF0000"
+            android:textSize="35dp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.355"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/imageView2"
+            app:layout_constraintVertical_bias="0.715"
+            android:visibility="invisible"/>
+
+        <TextView
+            android:id="@+id/touch_text4"
+            android:layout_width="70dp"
+            android:layout_height="53dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.355"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/imageView2"
+            app:layout_constraintVertical_bias="0.715"/>
+
+        <TextView
+            android:id="@+id/touch5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="터치"
+            android:textColor="#88FF0000"
+            android:textSize="35dp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.650"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/imageView2"
+            app:layout_constraintVertical_bias="0.715"
+            android:visibility="invisible"/>
+
+        <TextView
+            android:id="@+id/touch_text5"
+            android:layout_width="70dp"
+            android:layout_height="53dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.650"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/imageView2"
+            app:layout_constraintVertical_bias="0.715"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <FrameLayout
+        android:id="@+id/exLayout"
+        android:visibility="invisible"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#88000000"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="38dp"
+                android:layout_marginTop="30dp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="20dp"
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="230dp"
+                    android:background="@drawable/square"/>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="10dp"
+                    android:layout_gravity="center"
+                    android:gravity="center">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="아래의 키패드에서"
+                        android:textSize="23dp"
+                        android:textStyle="bold"
+                        android:textColor="#FFFFFF"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="네모 박스의 자판을 찾아"
+                        android:textSize="23dp"
+                        android:textStyle="bold"
+                        android:textColor="#FFFFFF"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="눌러보면 횟수에 따라"
+                        android:textSize="23dp"
+                        android:textStyle="bold"
+                        android:textColor="#FFFFFF"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="어떻게 입력되는지"
+                        android:textSize="23dp"
+                        android:textStyle="bold"
+                        android:textColor="#FFFFFF"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="알 수 있습니다."
+                        android:textSize="23dp"
+                        android:textStyle="bold"
+                        android:textColor="#FFFFFF"/>
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:scaleType="centerInside"
+                android:src="@drawable/keypad_size" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:gravity="center"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="'터치' 글자는 제대로"
+                    android:textSize="25dp"
+                    android:textStyle="bold"
+                    android:textColor="#FFFFFF"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="세 번 누르면 사라집니다."
+                    android:textSize="25dp"
+                    android:textStyle="bold"
+                    android:textColor="#FFFFFF"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="천천히 눌러보면서"
+                    android:textSize="25dp"
+                    android:textStyle="bold"
+                    android:textColor="#FFFFFF"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="화면에 어떻게 입력되는지"
+                    android:textSize="25dp"
+                    android:textStyle="bold"
+                    android:textColor="#FFFFFF"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="눈으로 확인해보세요."
+                    android:textSize="25dp"
+                    android:textStyle="bold"
+                    android:textColor="#FFFFFF"/>
+
+            </LinearLayout>
+        </FrameLayout>
+    </FrameLayout>
+
+</FrameLayout>
