@@ -6,6 +6,7 @@
     android:id="@+id/drawer_layout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:layout_gravity="center_horizontal"
     android:fitsSystemWindows="true"
     tools:openDrawer="start">
     <androidx.coordinatorlayout.widget.CoordinatorLayout
@@ -25,879 +26,868 @@
         </com.google.android.material.appbar.AppBarLayout>
 
         <FrameLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            app:layout_behavior="@string/appbar_scrolling_view_behavior">
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="top"
+                android:src="@drawable/basebackground"
+                android:adjustViewBounds="true"/>
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:orientation="vertical">
-
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_weight="127"/>
                 <FrameLayout
                     android:layout_width="match_parent"
                     android:layout_height="0dp"
-                    android:layout_weight="1"
-                    android:layout_marginBottom="15dp">
-
-                    <FrameLayout
+                    android:layout_weight="1793"
+                    android:layout_gravity="center_horizontal">
+                    <LinearLayout
                         android:id="@+id/layout1"
                         android:layout_width="match_parent"
-                        android:layout_height="match_parent">
-
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="81" />
+                        <TextView
+                            android:id="@+id/change1"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="271"
+                            android:gravity="center"
+                            android:text="화면을 누르는 것을\n응용해서 상하좌우로\n움직이는 것을 배워봅시다"
+                            android:textColor="#000000"
+                            android:autoSizeTextType="uniform"
+                            android:textStyle="bold" />
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="67" />
+                        <TextView
+                            android:id="@+id/change2"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="68"
+                            android:text="[ 방향을 선택해주세요. ]"
+                            android:textStyle="bold"
+                            android:textColor="#88000000"
+                            android:autoSizeTextType="uniform"
+                            android:gravity="center"/>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="45" />
                         <LinearLayout
                             android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:orientation="vertical">
+                            android:layout_height="0dp"
+                            android:layout_weight="526"
+                            android:orientation="horizontal">
                             <TextView
-                                android:id="@+id/change1"
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:layout_marginTop="40dp"
-                                android:gravity="center"
-                                android:text="화면을 누르는 것을"
-                                android:textColor="#000000"
-                                android:textSize="30dp"
-                                android:textStyle="bold" />
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="32" />
                             <TextView
-                                android:id="@+id/change2"
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:layout_marginTop="5dp"
-                                android:gravity="center"
-                                android:text="응용해서 상하좌우로"
-                                android:textColor="#000000"
-                                android:textSize="30dp"
-                                android:textStyle="bold" />
+                                android:id="@+id/text1"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="492"
+                                android:background="#E6E6E6"
+                                android:text="아래로\n스크롤"
+                                android:autoSizeTextType="uniform"
+                                android:textStyle="bold"
+                                android:autoSizeMaxTextSize="25dp"
+                                android:maxLines="2"
+                                android:gravity="center"/>
                             <TextView
-                                android:id="@+id/change3"
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:layout_marginTop="5dp"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="32" />
+                            <TextView
+                                android:id="@+id/text2"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="492"
+                                android:background="#E6E6E6"
+                                android:text="위로\n스크롤"
+                                android:autoSizeTextType="uniform"
+                                android:textStyle="bold"
+                                android:autoSizeMaxTextSize="25dp"
+                                android:maxLines="2"
+                                android:gravity="center"/>
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="32" />
+                        </LinearLayout>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="11" />
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="526"
+                            android:orientation="horizontal">
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="32" />
+                            <TextView
+                                android:id="@+id/text3"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="492"
+                                android:background="#E6E6E6"
+                                android:text="오른쪽으로\n스크롤"
+                                android:autoSizeMaxTextSize="25dp"
+                                android:autoSizeTextType="uniform"
+                                android:textStyle="bold"
                                 android:gravity="center"
-                                android:text="움직이는 것을 배워봅시다."
-                                android:textColor="#000000"
-                                android:textSize="30dp"
-                                android:textStyle="bold" />
+                                android:maxLines="2"/>
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="32" />
+                            <TextView
+                                android:id="@+id/text4"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="492"
+                                android:background="#E6E6E6"
+                                android:text="왼쪽으로\n스크롤"
+                                android:autoSizeTextType="uniform"
+                                android:textStyle="bold"
+                                android:autoSizeMaxTextSize="25dp"
+                                android:maxLines="2"
+                                android:gravity="center"/>
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="32" />
+                        </LinearLayout>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="46" />
+                        <Button
+                            android:id="@+id/backButton"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="100"
+                            android:lines="1"
+                            android:layout_gravity="center_horizontal"
+                            android:autoSizeMinTextSize="10dp"
+                            android:text="메인화면으로 돌아가기"
+                            android:autoSizeTextType="uniform"
+                            android:textStyle="bold"/>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="61" />
+                    </LinearLayout>
 
-                            <FrameLayout
+                    <LinearLayout
+                        android:id="@+id/layout2"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:visibility="invisible"
+                        android:orientation="vertical">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="84" />
+                        <TextView
+                            android:id="@+id/scroll_text"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="166"
+                            android:gravity="center"
+                            android:text="화면을 아래로 움직여\n글자을 찾아 눌러주세요."
+                            android:textColor="#000000"
+                            android:autoSizeTextType="uniform"
+                            android:textStyle="bold" />
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="40" />
+                        <!--            상하좌우 스크롤뷰-->
+                        <FrameLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1213">
+                            <ScrollView
+                                android:id="@+id/scroll_ver1"
+                                android:layout_marginTop="20dp"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginRight="15dp"
+                                android:fadeScrollbars="false"
+                                android:background="@drawable/stroke"
+                                android:padding="5dp"
                                 android:layout_width="match_parent"
                                 android:layout_height="match_parent"
-                                android:padding="15dp">
+                                android:visibility="invisible">
                                 <LinearLayout
                                     android:layout_width="match_parent"
                                     android:layout_height="match_parent"
-                                    android:orientation="vertical">
-
+                                    android:orientation="vertical" >
                                     <TextView
-                                        android:id="@+id/change4"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="800dp" />
+                                    <TextView
+                                        android:id="@+id/ver1_text"
                                         android:layout_width="match_parent"
                                         android:layout_height="wrap_content"
-                                        android:text="[ 방향을 선택해주세요. ]"
-                                        android:textSize="27dp"
+                                        android:text="누르기"
+                                        android:textColor="#FF0000"
+                                        android:textSize="40dp"
                                         android:textStyle="bold"
-                                        android:textColor="#88000000"
-                                        android:gravity="center"
-                                        android:layout_marginTop="20dp"
-                                        android:layout_marginBottom="20dp"/>
-
-                                    <LinearLayout
+                                        android:gravity="center_horizontal"/>
+                                </LinearLayout>
+                            </ScrollView>
+                            <ScrollView
+                                android:id="@+id/scroll_ver2"
+                                android:layout_marginTop="20dp"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginRight="15dp"
+                                android:fadeScrollbars="false"
+                                android:background="@drawable/stroke"
+                                android:padding="5dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:visibility="invisible">
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:orientation="vertical" >
+                                    <TextView
+                                        android:id="@+id/ver2_text"
                                         android:layout_width="match_parent"
-                                        android:layout_height="0dp"
-                                        android:layout_weight="1"
-                                        android:orientation="horizontal">
-                                        <TextView
-                                            android:id="@+id/text1"
-                                            android:layout_width="0dp"
-                                            android:layout_height="match_parent"
-                                            android:layout_weight="1"
-                                            android:background="#E6E6E6"
-                                            android:text="아래로\n스크롤"
-                                            android:textSize="23dp"
-                                            android:textStyle="bold"
-                                            android:gravity="center"/>
-                                        <TextView
-                                            android:layout_width="10dp"
-                                            android:layout_height="match_parent"/>
-                                        <TextView
-                                            android:id="@+id/text2"
-                                            android:layout_width="0dp"
-                                            android:layout_height="match_parent"
-                                            android:layout_weight="1"
-                                            android:background="#E6E6E6"
-                                            android:text="위로\n스크롤"
-                                            android:textSize="23dp"
-                                            android:textStyle="bold"
-                                            android:gravity="center"/>
-                                    </LinearLayout>
-
+                                        android:layout_height="wrap_content"
+                                        android:text="누르기"
+                                        android:textColor="#FF0000"
+                                        android:textSize="40dp"
+                                        android:textStyle="bold"
+                                        android:gravity="center_horizontal"/>
                                     <TextView
                                         android:layout_width="match_parent"
-                                        android:layout_height="10dp"/>
-
-                                    <LinearLayout
-                                        android:layout_width="match_parent"
-                                        android:layout_height="0dp"
-                                        android:layout_weight="1"
-                                        android:orientation="horizontal">
-                                        <TextView
-                                            android:id="@+id/text3"
-                                            android:layout_width="0dp"
-                                            android:layout_height="match_parent"
-                                            android:layout_weight="1"
-                                            android:background="#E6E6E6"
-                                            android:text="오른쪽으로\n스크롤"
-                                            android:textSize="23dp"
-                                            android:textStyle="bold"
-                                            android:gravity="center"/>
-                                        <TextView
-                                            android:layout_width="10dp"
-                                            android:layout_height="match_parent"/>
-                                        <TextView
-                                            android:id="@+id/text4"
-                                            android:layout_width="0dp"
-                                            android:layout_height="match_parent"
-                                            android:layout_weight="1"
-                                            android:background="#E6E6E6"
-                                            android:text="왼쪽으로\n스크롤"
-                                            android:textSize="23dp"
-                                            android:textStyle="bold"
-                                            android:gravity="center"/>
-                                    </LinearLayout>
-
+                                        android:layout_height="800dp" />
+                                </LinearLayout>
+                            </ScrollView>
+                            <HorizontalScrollView
+                                android:id="@+id/scroll_hor1"
+                                android:layout_marginTop="20dp"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginRight="15dp"
+                                android:fadeScrollbars="false"
+                                android:background="@drawable/stroke"
+                                android:padding="5dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:fillViewport="true"
+                                android:visibility="invisible">
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:orientation="horizontal">
                                     <TextView
-                                        android:layout_width="match_parent"
-                                        android:layout_height="20dp"/>
-
-                                    <Button
-                                        android:id="@+id/backButton"
+                                        android:layout_width="800dp"
+                                        android:layout_height="wrap_content"/>
+                                    <TextView
+                                        android:id="@+id/hor1_text"
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
-                                        android:layout_gravity="center_horizontal"
-                                        android:text="메인화면으로 돌아가기"
-                                        android:textSize="25dp"
+                                        android:layout_gravity="center_vertical"
+                                        android:text="누\n르\n기"
+                                        android:textColor="#FF0000"
+                                        android:textSize="40dp"
                                         android:textStyle="bold"/>
                                 </LinearLayout>
-                            </FrameLayout>
-                        </LinearLayout>
-                    </FrameLayout>
+                            </HorizontalScrollView>
+                            <HorizontalScrollView
+                                android:id="@+id/scroll_hor2"
+                                android:layout_marginTop="20dp"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginRight="15dp"
+                                android:fadeScrollbars="false"
+                                android:background="@drawable/stroke"
+                                android:padding="5dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:fillViewport="true">
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:orientation="horizontal">
+                                    <TextView
+                                        android:id="@+id/hor2_text"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center_vertical"
+                                        android:text="누\n르\n기"
+                                        android:textColor="#FF0000"
+                                        android:textSize="40dp"
+                                        android:textStyle="bold"/>
+                                    <TextView
+                                        android:layout_width="800dp"
+                                        android:layout_height="wrap_content"/>
+                                </LinearLayout>
+                            </HorizontalScrollView>
+                        </FrameLayout>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="34" />
+                        <Button
+                            android:id="@+id/replayButton"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="89"
+                            android:lines="1"
+                            android:autoSizeTextType="uniform"
+                            android:text="힌트 보여주기"
+                            android:autoSizeMinTextSize="10dp"
+                            android:textStyle="bold"
+                            android:layout_gravity="center_horizontal"/>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="45" />
+                        <Button
+                            android:id="@+id/returnButton"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:lines="1"
+                            android:layout_weight="89"
+                            android:autoSizeTextType="uniform"
+                            android:text="선택 화면으로 돌아가기"
+                            android:autoSizeMinTextSize="10dp"
+                            android:textStyle="bold"
+                            android:layout_gravity="center_horizontal" />
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="39" />
+                    </LinearLayout>
 
+                    <LinearLayout
+                        android:id="@+id/ex_layout1"
+                        android:background="#88000000"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:visibility="invisible"
+                        android:orientation="vertical">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="77" />
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="261"
+                            android:gravity="center"
+                            android:text="스크롤이란\n화면에 나타난 내용을\n상하 또는 좌우로 움직이는 것"
+                            android:autoSizeTextType="uniform"
+                            android:lines="3"
+                            android:textColor="#FFFFFF"
+                            android:textStyle="bold"/>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="155" />
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1128"
+                            android:background="@drawable/square"
+                            android:text="방향을 선택해주세요."
+                            android:gravity="center"
+                            android:autoSizeTextType="uniform"
+                            android:autoSizeMaxTextSize="30dp"
+                            android:textColor="#FFFFFF"
+                            android:textStyle="bold"/>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="176" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ex_layout2"
+                        android:background="#88000000"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:visibility="invisible"
+                        android:orientation="vertical">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="94" />
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="327"
+                            android:gravity="center"
+                            android:text="네 방향 모두 한번씩\n학습을 완료하면\n자동으로 시작화면으로\n돌아갑니다."
+                            android:lines="4"
+                            android:autoSizeTextType="uniform"
+                            android:textColor="#FFFFFF"
+                            android:textStyle="bold"/>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="854" />
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="249"
+                            android:gravity="center"
+                            android:text="이전의 시작화면으로\n돌아가고 싶으면\n아래의 버튼을 눌러주세요."
+                            android:lines="3"
+                            android:autoSizeTextType="uniform"
+                            android:textColor="#FFFFFF"
+                            android:textStyle="bold"/>
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="113"
+                            android:adjustViewBounds="true"
+                            android:src="@drawable/arrow_3"/>
+                        <Button
+                            android:layout_width="wrap_content"
+                            android:layout_height="0dp"
+                            android:layout_weight="117"
+                            android:background="@drawable/square"
+                            android:autoSizeTextType="uniform"
+                            android:lines="1"
+                            android:textStyle="bold"
+                            android:layout_gravity="center"
+                            android:text="                                            "/>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="45" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ex_layout3"
+                        android:visibility="invisible"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:background="#88000000">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="178" />
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="88"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="195"/>
+                            <ImageView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="78"
+                                android:adjustViewBounds="true"
+                                android:src="@drawable/arrow_7"/>
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="609"
+                                android:gravity="center"
+                                android:text="스크롤할 화면 부분입니다."
+                                android:lines="1"
+                                android:autoSizeTextType="uniform"
+                                android:textStyle="bold"
+                                android:textColor="#FFFFFF"/>
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="201"/>
+                        </LinearLayout>
+                        <FrameLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1258"
+                            android:background="@drawable/square">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="59"/>
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:orientation="vertical"
+                                    android:layout_weight="1022">
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="0dp"
+                                        android:layout_weight="72"/>
+                                    <TextView
+                                        android:id="@+id/ex_text"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="0dp"
+                                        android:layout_weight="287"
+                                        android:text="누르고 있는 상태에서\n위로 밀어보세요.\n글을 찾을 때까지\n반복해주세요."
+                                        android:lines="4"
+                                        android:autoSizeTextType="uniform"
+                                        android:textStyle="bold"
+                                        android:textColor="#FFFFFF"/>
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="0dp"
+                                        android:layout_weight="901" />
+                                </LinearLayout>
+                            </LinearLayout>
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="820"/>
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:orientation="vertical"
+                                    android:layout_weight="190">
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="0dp"
+                                        android:layout_weight="111" />
+                                    <ImageView
+                                        android:id="@+id/circle_up"
+                                        android:visibility="invisible"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="0dp"
+                                        android:layout_weight="190"
+                                        android:src="@drawable/redcircle"/>
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="0dp"
+                                        android:layout_weight="652" />
+                                    <ImageView
+                                        android:id="@+id/circle_down"
+                                        android:visibility="invisible"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="0dp"
+                                        android:layout_weight="190"
+                                        android:src="@drawable/redcircle"/>
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="0dp"
+                                        android:layout_weight="117" />
+                                </LinearLayout>
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="72"/>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:orientation="vertical"
+                                android:layout_height="match_parent">
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    android:layout_weight="532" />
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    android:layout_weight="190">
+                                    <TextView
+                                        android:layout_width="0dp"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="63"/>
+                                    <ImageView
+                                        android:id="@+id/circle_left"
+                                        android:visibility="invisible"
+                                        android:layout_width="0dp"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="190"
+                                        android:src="@drawable/redcircle"/>
+                                    <TextView
+                                        android:layout_width="0dp"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="567"/>
+                                    <ImageView
+                                        android:id="@+id/circle_right"
+                                        android:visibility="invisible"
+                                        android:layout_width="0dp"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="190"
+                                        android:src="@drawable/redcircle"/>
+                                    <TextView
+                                        android:layout_width="0dp"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="72"/>
+                                </LinearLayout>
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    android:layout_weight="536" />
+
+                            </LinearLayout>
+                        </FrameLayout>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="270" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ex_layout4"
+                        android:background="#88000000"
+                        android:visibility="invisible"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="0dp"
+                            android:layout_weight="259" />
+                        <FrameLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1259">
+                            <LinearLayout
+                                android:id="@+id/bar_updown"
+                                android:visibility="invisible"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="181"/>
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="631"
+                                    android:gravity="center"
+                                    android:text="화면 전체 길이에서\n현재 어느 위치에 있는지\n막대기로 확인할 수 있습니다."
+                                    android:lines="3"
+                                    android:autoSizeTextType="uniform"
+                                    android:textStyle="bold"
+                                    android:textColor="#FFFFFF"/>
+                                <ImageView
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="200"
+                                    android:adjustViewBounds="true"
+                                    android:src="@drawable/arrow_3_3"/>
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="68"
+                                    android:background="@drawable/square"/>
+                            </LinearLayout>
+                            <LinearLayout
+                                android:id="@+id/bar_leftright"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:visibility="invisible"
+                                android:orientation="vertical">
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    android:layout_weight="714"/>
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    android:layout_weight="214"
+                                    android:gravity="center"
+                                    android:text="화면 전체 길이에서\n현재 어느 위치에 있는지\n막대기로 확인할 수 있습니다."
+                                    android:lines="3"
+                                    android:autoSizeTextType="uniform"
+                                    android:textStyle="bold"
+                                    android:textColor="#FFFFFF"/>
+                                <ImageView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    android:layout_weight="265"
+                                    android:adjustViewBounds="true"
+                                    android:src="@drawable/arrow_3_2"/>
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    android:layout_weight="69"
+                                    android:background="@drawable/square"/>
+                            </LinearLayout>
+                        </FrameLayout>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="277" />
+                    </LinearLayout>
                     <FrameLayout
-                        android:id="@+id/layout2"
+                        android:id="@+id/ex_layout5"
+                        android:background="#88000000"
                         android:visibility="invisible"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent">
-
                         <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:orientation="vertical">
                             <TextView
-                                android:id="@+id/scroll_text"
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:layout_marginTop="40dp"
-                                android:gravity="center"
-                                android:text="화면을 아래로 움직여"
-                                android:textColor="#000000"
-                                android:textSize="30dp"
-                                android:textStyle="bold" />
+                                android:layout_width="wrap_content"
+                                android:layout_height="0dp"
+                                android:layout_weight="1124"/>
                             <TextView
                                 android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:layout_marginTop="5dp"
-                                android:gravity="center"
-                                android:text="글자을 찾아 눌러주세요."
-                                android:textColor="#000000"
-                                android:textSize="30dp"
-                                android:textStyle="bold" />
-                            <FrameLayout
+                                android:layout_height="0dp"
+                                android:layout_weight="214"
+                                android:gravity="left"
+                                android:paddingLeft="10dp"
+                                android:text="스크롤할 방향을\n다시 선택하고 싶다면\n'선택 화면으로 돌아가기'를\n눌러주세요."
+                                android:lines="4"
+                                android:autoSizeTextType="uniform"
+                                android:textStyle="bold"
+                                android:textColor="#FFFFFF"/>
+                            <LinearLayout
                                 android:layout_width="match_parent"
                                 android:layout_height="0dp"
-                                android:layout_weight="1">
-                                <ScrollView
-                                    android:id="@+id/scroll_ver1"
-                                    android:layout_marginTop="20dp"
-                                    android:layout_marginLeft="10dp"
-                                    android:layout_marginRight="15dp"
-                                    android:fadeScrollbars="false"
-                                    android:background="@drawable/stroke"
-                                    android:padding="5dp"
-                                    android:layout_width="match_parent"
+                                android:orientation="horizontal"
+                                android:layout_weight="356">
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="179"/>
+                                <TextView
+                                    android:layout_width="0dp"
                                     android:layout_height="match_parent"
-                                    android:visibility="invisible">
-                                    <LinearLayout
-                                        android:layout_width="match_parent"
-                                        android:layout_height="match_parent"
-                                        android:orientation="vertical" >
-                                        <TextView
-                                            android:layout_width="match_parent"
-                                            android:layout_height="800dp" />
-                                        <TextView
-                                            android:id="@+id/ver1_text"
-                                            android:layout_width="match_parent"
-                                            android:layout_height="wrap_content"
-                                            android:text="눌러주세요."
-                                            android:textColor="#FF0000"
-                                            android:textSize="40dp"
-                                            android:textStyle="bold"
-                                            android:gravity="center_horizontal"/>
-                                    </LinearLayout>
-                                </ScrollView>
-                                <ScrollView
-                                    android:id="@+id/scroll_ver2"
-                                    android:layout_marginTop="20dp"
-                                    android:layout_marginLeft="10dp"
-                                    android:layout_marginRight="15dp"
-                                    android:fadeScrollbars="false"
-                                    android:background="@drawable/stroke"
-                                    android:padding="5dp"
-                                    android:layout_width="match_parent"
-                                    android:layout_height="match_parent"
-                                    android:visibility="invisible">
-                                    <LinearLayout
-                                        android:layout_width="match_parent"
-                                        android:layout_height="match_parent"
-                                        android:orientation="vertical" >
-                                        <TextView
-                                            android:id="@+id/ver2_text"
-                                            android:layout_width="match_parent"
-                                            android:layout_height="wrap_content"
-                                            android:text="눌러주세요."
-                                            android:textColor="#FF0000"
-                                            android:textSize="40dp"
-                                            android:textStyle="bold"
-                                            android:gravity="center_horizontal"/>
-                                        <TextView
-                                            android:layout_width="match_parent"
-                                            android:layout_height="800dp" />
-                                    </LinearLayout>
-                                </ScrollView>
-                                <HorizontalScrollView
-                                    android:id="@+id/scroll_hor1"
-                                    android:layout_marginTop="20dp"
-                                    android:layout_marginLeft="10dp"
-                                    android:layout_marginRight="15dp"
-                                    android:fadeScrollbars="false"
-                                    android:background="@drawable/stroke"
-                                    android:padding="5dp"
-                                    android:layout_width="match_parent"
-                                    android:layout_height="match_parent"
-                                    android:fillViewport="true"
-                                    android:visibility="invisible">
-                                    <LinearLayout
-                                        android:layout_width="match_parent"
-                                        android:layout_height="match_parent"
-                                        android:orientation="horizontal">
-                                        <TextView
-                                            android:layout_width="800dp"
-                                            android:layout_height="wrap_content"/>
-                                        <TextView
-                                            android:id="@+id/hor1_text"
-                                            android:layout_width="wrap_content"
-                                            android:layout_height="wrap_content"
-                                            android:layout_gravity="center_vertical"
-                                            android:text="눌\n러\n주\n세\n요."
-                                            android:textColor="#FF0000"
-                                            android:textSize="40dp"
-                                            android:textStyle="bold"/>
-                                    </LinearLayout>
-                                </HorizontalScrollView>
-                                <HorizontalScrollView
-                                    android:id="@+id/scroll_hor2"
-                                    android:layout_marginTop="20dp"
-                                    android:layout_marginLeft="10dp"
-                                    android:layout_marginRight="15dp"
-                                    android:fadeScrollbars="false"
-                                    android:background="@drawable/stroke"
-                                    android:padding="5dp"
-                                    android:layout_width="match_parent"
-                                    android:layout_height="match_parent"
-                                    android:fillViewport="true">
-                                    <LinearLayout
-                                        android:layout_width="match_parent"
-                                        android:layout_height="match_parent"
-                                        android:orientation="horizontal">
-                                        <TextView
-                                            android:id="@+id/hor2_text"
-                                            android:layout_width="wrap_content"
-                                            android:layout_height="wrap_content"
-                                            android:layout_gravity="center_vertical"
-                                            android:text="눌\n러\n주\n세\n요."
-                                            android:textColor="#FF0000"
-                                            android:textSize="40dp"
-                                            android:textStyle="bold"/>
-                                        <TextView
-                                            android:layout_width="800dp"
-                                            android:layout_height="wrap_content"/>
-                                    </LinearLayout>
-                                </HorizontalScrollView>
-                            </FrameLayout>
-
-                            <Button
-                                android:id="@+id/replayButton"
+                                    android:layout_weight="59"
+                                    android:background="@drawable/arrow_4_2"/>
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="844"/>
+                            </LinearLayout>
+                            <TextView
                                 android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:text="힌트 보여주기"
-                                android:textSize="25dp"
-                                android:textStyle="bold"
-                                android:layout_gravity="center_horizontal"
-                                android:layout_marginTop="15dp"/>
-                            <Button
-                                android:id="@+id/returnButton"
+                                android:layout_height="0dp"
+                                android:layout_weight="50"/>
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+                            <TextView
                                 android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:text="선택 화면으로 돌아가기"
-                                android:textSize="25dp"
+                                android:layout_height="0dp"
+                                android:layout_weight="821"/>
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="264"
+                                android:paddingRight="10dp"
+                                android:gravity="right"
+                                android:text="스크롤하는 방법을\n보고 싶을 경우\n'힌트 보여주기'를\n눌러주세요."
+                                android:lines="4"
+                                android:autoSizeTextType="uniform"
                                 android:textStyle="bold"
-                                android:layout_gravity="center_horizontal"
-                                android:layout_marginTop="15dp"/>
-
+                                android:textColor="#FFFFFF"/>
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:orientation="horizontal"
+                                android:layout_weight="515">
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="733"/>
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="54"
+                                    android:background="@drawable/arrow_5_2"/>
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="295"/>
+                            </LinearLayout>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="0dp"
+                                android:layout_weight="196"/>
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="0dp"
+                                android:layout_weight="1508"/>
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="127">
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="345"/>
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="389"
+                                    android:background="@drawable/square"/>
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="348"/>
+                            </LinearLayout>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="0dp"
+                                android:layout_weight="9"/>
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="136">
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="237"/>
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="605"
+                                    android:background="@drawable/square"/>
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="240"/>
+                            </LinearLayout>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="0dp"
+                                android:layout_weight="17"/>
                         </LinearLayout>
                     </FrameLayout>
                 </FrameLayout>
             </LinearLayout>
-            <FrameLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent">
-                <FrameLayout
-                    android:id="@+id/ex_layout1"
-                    android:background="#88000000"
-                    android:visibility="invisible"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent">
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="40dp"
-                        android:gravity="center"
-                        android:orientation="vertical">
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="스크롤이란 "
-                            android:textSize="30dp"
-                            android:textColor="#FFFFFF"
-                            android:textStyle="bold"/>
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginTop="5dp"
-                            android:text="화면에 나타난 내용이 상하"
-                            android:textSize="30dp"
-                            android:textColor="#FFFFFF"
-                            android:textStyle="bold"/>
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginTop="5dp"
-                            android:text="또는 좌우로 움직이는 것"
-                            android:textSize="30dp"
-                            android:textColor="#FFFFFF"
-                            android:textStyle="bold"/>
-                    </LinearLayout>
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="215dp"
-                        android:gravity="center"
-                        android:orientation="vertical">
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="* 다음 설명으로 넘어가고 싶으면"
-                            android:textSize="25dp"
-                            android:textColor="#FAE0D4"
-                            android:textStyle="bold"/>
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginTop="6dp"
-                            android:text="아무 곳이나 가볍게 눌러주세요. *"
-                            android:textSize="25dp"
-                            android:textColor="#FAE0D4"
-                            android:textStyle="bold"/>
-
-                    </LinearLayout>
-                    <FrameLayout
-                        android:layout_marginTop="250dp"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:layout_marginBottom="90dp"
-                        android:background="@drawable/square">
-
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:gravity="center"
-                            android:orientation="vertical">
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:text="어느 방향으로 움직이는 것을"
-                                android:textSize="30dp"
-                                android:textColor="#FFFFFF"
-                                android:textStyle="bold"/>
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:text="배울지 선택해주세요."
-                                android:textSize="30dp"
-                                android:textColor="#FFFFFF"
-                                android:textStyle="bold"/>
-                        </LinearLayout>
-                    </FrameLayout>
-                </FrameLayout>
-
-                <FrameLayout
-                    android:id="@+id/ex_layout2"
-                    android:background="#88000000"
-                    android:visibility="invisible"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_gravity="bottom">
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:gravity="center"
-                        android:layout_marginTop="70dp"
-                        android:orientation="vertical">
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="전부 다 한 번씩"
-                            android:textSize="30dp"
-                            android:textColor="#FFFFFF"
-                            android:textStyle="bold"/>
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="학습을 완료하면"
-                            android:textSize="30dp"
-                            android:textColor="#FFFFFF"
-                            android:textStyle="bold"/>
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="자동으로 시작화면으로"
-                            android:textSize="30dp"
-                            android:textColor="#FFFFFF"
-                            android:textStyle="bold"/>
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="돌아갑니다."
-                            android:textSize="30dp"
-                            android:textColor="#FFFFFF"
-                            android:textStyle="bold"/>
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginTop="15dp"
-                            android:text="단, 연속으로 네 방향을 배우지 않으면"
-                            android:textSize="23dp"
-                            android:textColor="#FAE0D4"
-                            android:textStyle="bold"/>
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="학습 완료로 인정되지 않습니다."
-                            android:textSize="23dp"
-                            android:textColor="#FAE0D4"
-                            android:textStyle="bold"/>
-                    </LinearLayout>
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="bottom"
-                        android:gravity="center_horizontal"
-                        android:orientation="vertical">
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="이전의 시작화면으로"
-                            android:textSize="30dp"
-                            android:textColor="#FFFFFF"
-                            android:textStyle="bold"/>
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="돌아가고 싶으면"
-                            android:textSize="30dp"
-                            android:textColor="#FFFFFF"
-                            android:textStyle="bold"/>
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="아래의 버튼을 눌러주세요."
-                            android:textSize="30dp"
-                            android:textColor="#FFFFFF"
-                            android:textStyle="bold"/>
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginBottom="5dp"
-                            android:layout_marginTop="5dp"
-                            android:background="@drawable/arrow_3"/>
-                        <TextView
-                            android:layout_width="290dp"
-                            android:layout_height="wrap_content"
-                            android:background="@drawable/square"
-                            android:textSize="40dp"
-                            android:layout_marginBottom="25dp"/>
-                    </LinearLayout>
-                </FrameLayout>
-
-                <FrameLayout
-                    android:id="@+id/ex_layout3"
-                    android:visibility="invisible"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:background="#88000000">
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="90dp"
-                        android:gravity="center"
-                        android:orientation="horizontal">
-                        <TextView
-                            android:layout_width="35dp"
-                            android:layout_height="35dp"
-                            android:background="@drawable/arrow_7"/>
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="스크롤할 화면 부분입니다."
-                            android:textSize="28dp"
-                            android:textStyle="bold"
-                            android:textColor="#FFFFFF"/>
-                    </LinearLayout>
-
-                    <FrameLayout
-                        android:layout_marginTop="135dp"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:layout_marginBottom="140dp">
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:background="@drawable/square"/>
-                        <LinearLayout
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginTop="30dp"
-                            android:layout_marginLeft="30dp"
-                            android:orientation="vertical">
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:text="누르고 있는 상태에서"
-                                android:textSize="25dp"
-                                android:textStyle="bold"
-                                android:textColor="#FFFFFF"/>
-                            <TextView
-                                android:id="@+id/ex_text"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:text="위로 밀어보세요."
-                                android:textSize="25dp"
-                                android:textStyle="bold"
-                                android:textColor="#FFFFFF"/>
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_marginTop="10dp"
-                                android:text="글을 찾을 때까지"
-                                android:textSize="25dp"
-                                android:textStyle="bold"
-                                android:textColor="#FFFFFF"/>
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:text="반복해주세요."
-                                android:textSize="25dp"
-                                android:textStyle="bold"
-                                android:textColor="#FFFFFF"/>
-                        </LinearLayout>
-                    </FrameLayout>
-                </FrameLayout>
-
-                <FrameLayout
-                    android:layout_marginTop="135dp"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_marginBottom="140dp">
-                    <TextView
-                        android:id="@+id/circle_up"
-                        android:visibility="invisible"
-                        android:layout_width="100dp"
-                        android:layout_height="100dp"
-                        android:layout_marginTop="50dp"
-                        android:layout_marginBottom="50dp"
-                        android:layout_marginRight="30dp"
-                        android:layout_gravity="right"
-                        android:background="@drawable/redcircle"/>
-                    <TextView
-                        android:id="@+id/circle_down"
-                        android:visibility="invisible"
-                        android:layout_width="100dp"
-                        android:layout_height="100dp"
-                        android:layout_marginTop="50dp"
-                        android:layout_marginBottom="50dp"
-                        android:layout_marginRight="30dp"
-                        android:layout_gravity="bottom|right"
-                        android:background="@drawable/redcircle"/>
-                    <TextView
-                        android:id="@+id/circle_left"
-                        android:visibility="invisible"
-                        android:layout_width="100dp"
-                        android:layout_height="100dp"
-                        android:layout_marginLeft="30dp"
-                        android:layout_marginRight="30dp"
-                        android:layout_gravity="center_vertical"
-                        android:background="@drawable/redcircle"/>
-                    <TextView
-                        android:id="@+id/circle_right"
-                        android:visibility="invisible"
-                        android:layout_width="100dp"
-                        android:layout_height="100dp"
-                        android:layout_marginLeft="30dp"
-                        android:layout_marginRight="30dp"
-                        android:layout_gravity="center_vertical|right"
-                        android:background="@drawable/redcircle"/>
-                </FrameLayout>
-
-                <FrameLayout
-                    android:id="@+id/ex_layout4"
-                    android:background="#88000000"
-                    android:visibility="invisible"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent">
-
-                    <LinearLayout
-                        android:id="@+id/bar_updown"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:visibility="invisible"
-                        android:layout_marginBottom="140dp"
-                        android:layout_marginTop="135dp"
-                        android:layout_gravity="right"
-                        android:orientation="horizontal">
-                        <LinearLayout
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="1"
-                            android:layout_gravity="center"
-                            android:orientation="vertical"
-                            android:gravity="center_horizontal">
-                            <TextView
-                                android:layout_width="200dp"
-                                android:layout_height="50dp"
-                                android:layout_gravity="right"
-                                android:layout_marginRight="10dp"
-                                android:background="@drawable/arrow_7"/>
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:text="화면 전체 길이에서"
-                                android:textSize="25dp"
-                                android:textStyle="bold"
-                                android:textColor="#FFFFFF"/>
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:text="현재 어느 위치에 있는지"
-                                android:textSize="25dp"
-                                android:textStyle="bold"
-                                android:textColor="#FFFFFF"/>
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:text="막대기로 확인할 수 있습니다."
-                                android:textSize="25dp"
-                                android:textStyle="bold"
-                                android:textColor="#FFFFFF"/>
-                        </LinearLayout>
-                        <TextView
-                            android:layout_width="30dp"
-                            android:layout_height="match_parent"
-                            android:background="@drawable/square"/>
-                    </LinearLayout>
-                    <LinearLayout
-                        android:id="@+id/bar_leftright"
-                        android:visibility="invisible"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginBottom="140dp"
-                        android:layout_gravity="bottom"
-                        android:orientation="vertical">
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:orientation="vertical"
-                            android:gravity="center_horizontal">
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:text="화면 전체 길이에서"
-                                android:textSize="25dp"
-                                android:textStyle="bold"
-                                android:textColor="#FFFFFF"/>
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:text="현재 어느 위치에 있는지"
-                                android:textSize="25dp"
-                                android:textStyle="bold"
-                                android:textColor="#FFFFFF"/>
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:text="막대기로 확인할 수 있습니다."
-                                android:textSize="25dp"
-                                android:textStyle="bold"
-                                android:textColor="#FFFFFF"/>
-                        </LinearLayout>
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="125dp"
-                            android:layout_marginTop="10dp"
-                            android:layout_marginBottom="10dp"
-                            android:layout_gravity="center"
-                            android:background="@drawable/arrow_3_2"/>
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="30dp"
-                            android:background="@drawable/square"/>
-                    </LinearLayout>
-                </FrameLayout>
-                <FrameLayout
-                    android:id="@+id/ex_layout5"
-                    android:background="#88000000"
-                    android:visibility="invisible"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent">
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:orientation="vertical"
-                        android:layout_gravity="bottom"
-                        android:layout_marginBottom="80dp"
-                        android:gravity="right">
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginRight="10dp"
-                            android:text="스크롤하는 방법을"
-                            android:textSize="25dp"
-                            android:textStyle="bold"
-                            android:textColor="#FFFFFF"/>
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginRight="10dp"
-                            android:text="보고 싶을 경우"
-                            android:textSize="25dp"
-                            android:textStyle="bold"
-                            android:textColor="#FFFFFF"/>
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginRight="10dp"
-                            android:text="'힌트 보여주기'를"
-                            android:textSize="25dp"
-                            android:textStyle="bold"
-                            android:textColor="#FFFFFF"/>
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginRight="10dp"
-                            android:text="'눌러주세요."
-                            android:textSize="25dp"
-                            android:textStyle="bold"
-                            android:textColor="#FFFFFF"/>
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:gravity="center_horizontal"
-                            android:orientation="horizontal">
-                            <TextView
-                                android:layout_width="190dp"
-                                android:layout_height="60dp"
-                                android:layout_marginLeft="30dp"
-                                android:layout_gravity="bottom"
-                                android:background="@drawable/square"/>
-                            <TextView
-                                android:layout_width="30dp"
-                                android:layout_height="250dp"
-                                android:layout_marginTop="10dp"
-                                android:layout_marginBottom="15dp"
-                                android:background="@drawable/arrow_5_2"/>
-                        </LinearLayout>
-                    </LinearLayout>
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:orientation="vertical"
-                        android:layout_gravity="bottom"
-                        android:gravity="left">
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginLeft="10dp"
-                            android:text="스크롤할 방향을"
-                            android:textSize="25dp"
-                            android:textStyle="bold"
-                            android:textColor="#FFFFFF"/>
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginLeft="10dp"
-                            android:text="다시 선택하고 싶다면"
-                            android:textSize="25dp"
-                            android:textStyle="bold"
-                            android:textColor="#FFFFFF"/>
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginLeft="10dp"
-                            android:text="'선택 화면으로 돌아가기'를"
-                            android:textSize="25dp"
-                            android:textStyle="bold"
-                            android:textColor="#FFFFFF"/>
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginLeft="10dp"
-                            android:text="눌러주세요."
-                            android:textSize="25dp"
-                            android:textStyle="bold"
-                            android:textColor="#FFFFFF"/>
-
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_marginBottom="10dp"
-                            android:gravity="center_horizontal"
-                            android:orientation="horizontal">
-                            <TextView
-                                android:layout_width="30dp"
-                                android:layout_height="170dp"
-                                android:layout_marginTop="10dp"
-                                android:layout_marginBottom="15dp"
-                                android:background="@drawable/arrow_4_2"/>
-                            <TextView
-                                android:layout_width="300dp"
-                                android:layout_height="65dp"
-                                android:layout_marginRight="30dp"
-                                android:layout_gravity="bottom"
-                                android:background="@drawable/square"/>
-                        </LinearLayout>
-                    </LinearLayout>
-                </FrameLayout>
-            </FrameLayout>
         </FrameLayout>
     </androidx.coordinatorlayout.widget.CoordinatorLayout>
-
 </androidx.drawerlayout.widget.DrawerLayout>
 

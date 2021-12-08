@@ -4,11 +4,13 @@ import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.os.Handler;
+import android.text.Html;
 import android.view.View;
 import android.view.animation.TranslateAnimation;
 import android.widget.Button;
 import android.widget.FrameLayout;
 import android.widget.HorizontalScrollView;
+import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.ScrollView;
 import android.widget.TextView;
@@ -35,53 +37,35 @@ public class ScrollMain extends AppCompatActivity {
     Toolbar toolbar;
     private AdView mAdView;
 
-    FrameLayout layout1;
-    FrameLayout layout2;
-    FrameLayout ex_layout1;
-    FrameLayout ex_layout2;
-    FrameLayout ex_layout3;
-        TextView ex_text;
-        String[] ex_texts;
-    FrameLayout ex_layout4;
-        LinearLayout bar_updown;
-        LinearLayout bar_leftright;
+    LinearLayout layout1, layout2;
+    TextView change1, change2;
+
+    TextView menu1, menu2, menu3, menu4;
+
+    Button backButton, replayButton, returnButton;
+
+    ScrollView scroll_ver1, scroll_ver2;
+    HorizontalScrollView scroll_hor1, scroll_hor2;
+    TextView ver_text1, ver_text2, hor_text1, hor_text2;
+
+    LinearLayout ex_layout1, ex_layout2, ex_layout3, ex_layout4;
     FrameLayout ex_layout5;
 
-    TextView menu1;
-    TextView menu2;
-    TextView menu3;
-    TextView menu4;
-    String textSet;
+    ImageView circle_up, circle_down, circle_left, circle_right;
 
-    TextView ver_text1;
-    TextView ver_text2;
-    TextView hor_text1;
-    TextView hor_text2;
+    LinearLayout bar_updown, bar_leftright;
 
-    TextView scroll_text;
-    ScrollView scroll_ver1;
-    ScrollView scroll_ver2;
-    HorizontalScrollView scroll_hor1;
-    HorizontalScrollView scroll_hor2;
+    TextView scroll_text, ex_text;
+
+    String[] ex_texts;
     View[] scrolls;
 
-    TranslateAnimation up;
-    TranslateAnimation down;
-    TranslateAnimation left;
-    TranslateAnimation right;
+    TranslateAnimation up, down, left, right;
 
-    TextView circle_up;
-    TextView circle_down;
-    TextView circle_left;
-    TextView circle_right;
-    TextView[] circles;
+    ImageView[] circles;
 
     int number;
 
-    TextView change1;
-    TextView change2;
-    TextView change3;
-    TextView change4;
 
 
     @Override
@@ -106,11 +90,21 @@ public class ScrollMain extends AppCompatActivity {
         hor_text1 = findViewById(R.id.hor1_text);
         hor_text2 = findViewById(R.id.hor2_text);
 
+        ex_text = findViewById(R.id.ex_text);
         ex_layout1 = findViewById(R.id.ex_layout1);
         ex_layout2 = findViewById(R.id.ex_layout2);
         ex_layout3 = findViewById(R.id.ex_layout3);
-            ex_text = findViewById(R.id.ex_text);
-            ex_texts = new String[]{"위로 밀어보세요.", "아래로 밀어보세요.", "왼쪽으로 밀어보세요.", "오른쪽으로 밀어보세요."};
+
+
+        ex_texts = new String[]{"위로 밀어보세요.",
+                "아래로 밀어보세요.",
+                "왼쪽으로 밀어보세요.",
+                "오른쪽으로 밀어보세요."};
+//            ex_texts = new String[]{"누르고 있는 상태에서\\n위로 밀어보세요.\\n글을 찾을 때까지\\n반복해주세요.",
+//                    "누르고 있는 상태에서\\n아래로 밀어보세요.\\n글을 찾을 때까지\\n반복해주세요.",
+//                    "누르고 있는 상태에서\\n왼쪽으로 밀어보세요.\\n글을 찾을 때까지\\n반복해주세요.",
+//                    "누르고 있는 상태에서\\n오른쪽으로 밀어보세요.\\n글을 찾을 때까지\\n반복해주세요."};
+
         ex_layout4 = findViewById(R.id.ex_layout4);
             bar_leftright = findViewById(R.id.bar_leftright);
             bar_updown = findViewById(R.id.bar_updown);
@@ -126,7 +120,7 @@ public class ScrollMain extends AppCompatActivity {
         circle_down = findViewById(R.id.circle_down);
         circle_left = findViewById(R.id.circle_left);
         circle_right = findViewById(R.id.circle_right);
-        circles = new TextView[]{circle_down, circle_up, circle_right, circle_left};
+        circles = new ImageView[]{circle_down, circle_up, circle_right, circle_left};
 
         up = new TranslateAnimation(0, 0, 0, -800);
         up.setDuration(2000);
@@ -156,15 +150,11 @@ public class ScrollMain extends AppCompatActivity {
 
         change1 = findViewById(R.id.change1);
         change2 = findViewById(R.id.change2);
-        change3 = findViewById(R.id.change3);
-        change4 = findViewById(R.id.change4);
 
         if (AppConstants.SCROLL_ifValue){
             ex_layout1.setVisibility(View.VISIBLE);
             change1.setTextColor(Color.parseColor("#FFFFFF"));
             change2.setTextColor(Color.parseColor("#FFFFFF"));
-            change3.setTextColor(Color.parseColor("#FFFFFF"));
-            change4.setTextColor(Color.parseColor("#FFFFFF"));
         }
 
         ex_layout1.setOnClickListener(new View.OnClickListener() {
@@ -180,8 +170,6 @@ public class ScrollMain extends AppCompatActivity {
                 ex_layout2.setVisibility(View.INVISIBLE);
                 change1.setTextColor(Color.parseColor("#000000"));
                 change2.setTextColor(Color.parseColor("#000000"));
-                change3.setTextColor(Color.parseColor("#000000"));
-                change4.setTextColor(Color.parseColor("#88000000"));
                 AppConstants.SCROLL_ifValue = false;
             }
         });
@@ -363,7 +351,7 @@ public class ScrollMain extends AppCompatActivity {
         }
 
         ex_layout3.setVisibility(View.VISIBLE);
-        ex_text.setText(ex_texts[position]);
+        ex_text.setText(Html.fromHtml("누르고 있는 상태에서" + "<br />" + ex_texts[position] + "<br />" + "글을 찾을 때까지" + "<br />" + "반복해주세요."));
         circle_anim(position);
 
         scrolls[position].setVisibility(View.VISIBLE);
